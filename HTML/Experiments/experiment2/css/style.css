@@ -1,0 +1,100 @@
+:root {
+  --ink: #010610; /* primary text */
+  --muted: #64748b; /* secondary text */
+  --bg: #f6f7fb; /* page bg */
+  --card: #ffffff; /* card bg */
+  --line: #e8ebf2; /* separators */
+  --brand: #0b72e0; /* royal blue */
+  --accent: #8b5cf6; /* soft violet */
+  --gold: #c9a227; /* luxery accent */
+}
+
+*{
+    box-sizing: border-box;
+    
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.65;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+  margin: 0 0 0.6rem;
+}
+
+p {
+  margin: 0.4rem 0 1rem;
+  color: var(--muted);
+}
+
+::selection {
+  background: var(--accent);
+  color: white;
+}
+
+#about-header {
+  position: relative;
+  padding: 96px 24px 120px;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(to bottom, #0f172a, #1e3a8a, #4338ca);
+  overflow: hidden;
+}
+
+#about-header::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 48px;
+  width: 120px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  border-radius: 999px;
+}
+
+#about-header h1 {
+  font-size: 2rem;
+  letter-spacing: 0.3px;
+}
+
+#about-header p {
+  max-width: 780px;
+  margin: 0.75rem auto 0;
+  color: #e6e8ff;
+  opacity: 0.95;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto 64px;
+  padding: 0 24px;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+  border: 1px solid var(--line);
+  padding: 32px 28px;
+}
+
+.section {
+  margin: 28px 0 40px;
+}
+
+.section-title {
+  display: inline-block;
+  font-size: 1.4rem;
+  color: var(--ink);
+  position: relative;
+  padding-bottom: 8px;
+}
+
