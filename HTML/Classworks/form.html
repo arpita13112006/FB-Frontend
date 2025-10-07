@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <style>
+    body {
+      background: #f6f8fa;
+      font-family: Arial, sans-serif;
+    }
+    form {
+      background: #fff;
+      max-width: 480px;
+      margin: 36px auto;
+      padding: 28px;
+      border-radius: 12px;
+      box-shadow: 0 4px 22px #0001;
+    }
+    fieldset {
+      border: 1.5px solid #b0bec5;
+      border-radius: 6px;
+      margin-bottom: 18px;
+      padding: 16px 14px 12px 14px;
+    }
+    legend {
+      font-weight: bold;
+      color: #009688;
+      padding: 0 8px;
+      font-size: 1.09rem;
+    }
+    label {
+      display: block;
+      margin-bottom: 6px;
+      margin-top: 12px;
+      font-size: 1rem;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 7px 10px;
+      margin-bottom: 6px;
+      border: 1px solid #b0bec5;
+      border-radius: 5px;
+      font-size: 0.98rem;
+    }
+    input[type="radio"], input[type="checkbox"] {
+      width: auto;
+      margin-right: 7px;
+    }
+    .radio-group, .checkbox-group {
+      margin-top: 7px;
+      margin-bottom: 10px;
+    }
+    button {
+      background: #009688;
+      border: none;
+      color: #fff;
+      padding: 10px 0;
+      width: 100%;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 1rem;
+      margin-top: 10px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    button:hover {
+      background: #00685c;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <!-- Personal Info Section -->
+    <fieldset>
+      <legend>Personal Info</legend>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" required>
+
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" required>
+
+      <label>Gender</label>
+      <div class="radio-group">
+        <label><input type="radio" name="gender" value="Male" required> Male</label>
+        <label><input type="radio" name="gender" value="Female"> Female</label>
+        <label><input type="radio" name="gender" value="Other"> Other</label>
+      </div>
+    </fieldset>
+
+    <!-- Contact Info Section -->
+    <fieldset>
+      <legend>Contact Info</legend>
+      <label for="email">Email Address</label>
+      <input type="email" id="email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" maxlength="15" required>
+
+      <label for="region">Region</label>
+      <select id="region" required>
+        <!-- <option value="" selected disabled>Choose your region</option> -->
+        <option value="north">North India</option>
+        <option value="south">South India</option>
+        <option value="east">East India</option>
+        <option value="west">West India</option>
+        <option value="central">Central India</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="address">Address</label>
+      <textarea id="address" rows="2" required></textarea>
+    </fieldset>
+
+    <!-- Account Section -->
+    <fieldset>
+      <legend>Account Info</legend>
+      <label for="password">Password</label>
+      <input type="password" id="password" required>
+
+      <label for="confirm">Confirm Password</label>
+      <input type="password" id="confirm" required>
+    </fieldset>
+
+    <!-- Terms Agreement -->
+    <div class="checkbox-group">
+      <label>
+        <input type="checkbox" required>
+        I agree to the Terms and Conditions
+      </label>
+    </div>
+    <button type="submit">Register</button>
+  </form>
+</body>
+</html>
