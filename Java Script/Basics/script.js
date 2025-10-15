@@ -23,3 +23,24 @@
 // let b="20";
 // console.log(a == b); //type coercion
 // console.log(a === b);
+
+// if(" "){
+//     console.log("hello")
+// }else{
+//     console.log("bye")
+// } //space bhi ek character hai toh true
+
+// if(0){
+//     console.log("hello")
+// }else{
+//     console.log("bye")
+// }
+
+// console.log(("lucky"|| undefined ) && (null && 1))     
+
+// ****
+// ***
+// **
+// *
+
+
