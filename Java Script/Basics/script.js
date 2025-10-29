@@ -85,3 +85,41 @@
 // sum(1,2,3,4,5,6,7,8,9,10);
 
 
+//const arr=[1,2,3,4,"abhishek",undefined,NaN,null,false];   //sab chlega
+
+// const arr = new Array("abs","def","ghi");
+// console.log(arr);
+
+// const start=[1,2,3,4];
+// const end=[4,5,6,7];
+// const newArr=[];
+// for(let num of start){
+//     newArr.push(num);
+// }
+// for(let num of end){
+//     newArr.push(num);
+// }
+// console.log(newArr);
+
+
+// const start=[1,2,3,4];
+// const end=[4,5,6,7];
+
+// const newArr=start.concat(end);
+// console.log(newArr);
+
+
+ const start=[1,2,3,4,5,6,7,2,4,56,84];
+
+// const index=start.indexOf(56);
+// console.log("index of 56 is ",index);
+
+// const start=[1,5,2,7,23,7,8,3,78];
+
+// const sorted=start.sort((a,b) => {
+//     return a-b;
+// });
+// console.log(start);
+
+const double = start.map((n)=>n*2);
+console.log(start);
