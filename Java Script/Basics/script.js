@@ -109,7 +109,7 @@
 // console.log(newArr);
 
 
- const start=[1,2,3,4,5,6,7,2,4,56,84];
+//  const start=[1,2,3,4,5,6,7,2,4,56,84];
 
 // const index=start.indexOf(56);
 // console.log("index of 56 is ",index);
@@ -121,5 +121,36 @@
 // });
 // console.log(start);
 
-const double = start.map((n)=>n*2);
-console.log(start);
+// const double = start.map((n)=>n*2);
+// console.log(start);
+
+//  const arr=[3,5,2,10,7,9];
+//  const iseven=(num) => {
+//     return num%2===0;
+//  };
+
+//  const firsteven = arr.find(iseven);   //find pehela element deta h filter jo jo element pass ho rhe h
+
+ 
+//  console.log(firsteven);
+// call back funct
+
+
+// const arr=[3,5,2,10,7,9];
+// const firsteven=arr.find((num)=>num%2===0);
+// console.log(firsteven);
+
+// let name="alice";
+// let name="bob";
+// console.log(name);
+
+// let num=5;
+// if(num>3){
+//     let num=10;
+//     console.log("inside ",num);
+// }
+// console.log("outside ",num);
+
+// const isOdd=(num) =>(num%2===0)?even:odd;
+
+const greet=(name) =>"hello, "+name+"!";
