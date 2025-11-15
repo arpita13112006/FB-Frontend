@@ -153,4 +153,48 @@
 
 // const isOdd=(num) =>(num%2===0)?even:odd;
 
-const greet=(name) =>"hello, "+name+"!";
+// let greet=(name) =>"hello, "+name+"!";
+
+// const message=`Hey ${user} , you have ${points} points!`;
+
+// const person={
+//     firstName:"nitin",
+//     lastName:"Sharma",
+//     age:21,
+//     introduce:function(){
+//         console.log(`Hi, my name is ${this.firstName} ${this.lastName} and i am ${this.age} years old.`);
+//     },
+// };
+// console.log(person.firstName);
+// console.log(person.lastName);
+// person.introduce();
+// const hisage="age";
+// console.log(person[hisage]);
+
+// person.birthYear=2025-person.age;
+// person=function(){
+// console.log(`Hey my birthyear is ${this.birthYear}`)
+// };
+
+// console.log(person); //error
+
+// const alpha=["A","B","C","D","E","F","G","H","I","J"];
+// const[,second,,,fifth]=alpha;
+// console.log(second,fifth);
+
+
+// const arr=[1,2,3,4,5,6,7,8,9]
+// const[first,second,...rest]=arr;
+// console.log(arr);
+
+// const arr=[1,2,3,4,5,6,7,8,9];
+// const arr2=[10,11,12,13];
+// const result=[...arr,...arr2];
+// console.log(result);
+
+let count=10;
+const timer=setInterval(() =>{
+    console.log(count);
+    count--;
+    if(count<=0) clearInterval(timer);
+    if(count<1) console.log("boom") ;},1000)
