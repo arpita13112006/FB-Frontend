@@ -1,11 +1,3 @@
-// const chess = document.querySelector(".container");
-// const firstrow =  `<div class="square"></div>`.repeat(8);
-// const seconrow = ` <div class="square-even"></div>`.repeat(8);
-
-// const final = (firstrow + seconrow).repeat(4);
-
-// chess.innerHTML = final;
-
 const body= document.querySelector("body");
 const box =document.createElement("div");
 const btn=document.createElement("button");
@@ -27,3 +19,5 @@ btn.addEventListener("click",function() {
         box.classList.add("small-box");
     }
 });
+
+
