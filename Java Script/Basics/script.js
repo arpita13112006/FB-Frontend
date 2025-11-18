@@ -192,9 +192,19 @@
 // const result=[...arr,...arr2];
 // console.log(result);
 
-let count=10;
-const timer=setInterval(() =>{
-    console.log(count);
-    count--;
-    if(count<=0) clearInterval(timer);
-    if(count<1) console.log("boom") ;},1000)
+// let count=10;
+// const timer=setInterval(() =>{
+//     console.log(count);
+//     count--;
+//     if(count<=0) clearInterval(timer);
+//     if(count<1) console.log("boom") ;},1000)
+
+// const luf={
+//     code:"LH",
+//     num:20,
+// };
+// const indigo={
+//     code:"AK",
+//     num:15,
+// };
+

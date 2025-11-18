@@ -1,0 +1,24 @@
+body {
+            font-family: Arial;
+            margin: 40px;
+        }
+
+        #taskInput {
+            padding: 10px;
+            width: 250px;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+
+        li {
+            margin: 8px 0;
+            list-style: none;
+        }
+
+        .btn {
+            margin-left: 10px;
+        }

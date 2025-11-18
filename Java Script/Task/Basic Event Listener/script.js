@@ -6,9 +6,6 @@ body.appendChild(btn);
 btn.textContent="Click me!";
 btn.style.height="30px";
 btn.style.width="100px";
-// box.style.height="200px";
-// box.style.width="200px";
-// box.style.backgroundColor="teal";
 box.classList.add("small-box");
 btn.addEventListener("click",function() {
     if (box.classList.contains("small-box")) {
