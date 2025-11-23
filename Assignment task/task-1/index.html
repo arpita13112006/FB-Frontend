@@ -1,52 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To Do List</title>
+    <title>Simple To Do List</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <h2>To Do List</h2>
 
-    <input type="text" id="input" placeholder="Enter Task">
-    <button id="btn">Add Task</button>
+    <input id="taskInput" type="text" placeholder="Enter task">
 
-    <ul id="tasklist"></ul>
-    
-    <script>
-        const taskInput = document.getElementById("input");
-        const addbtn = document.getElementById("btn");
-        const list = document.getElementById("tasklist");
+    <select id="priority">
+        <option value="high">High</option>
+        <option value="medium">Medium</option>
+        <option value="low">Low</option>
+    </select>
 
-        addbtn.addEventListener("click", function() {
+    <button id="addBtn">Add Task</button>
 
-            const text = taskInput.value.trim();
-            if (text === "") return;
+    <ul id="taskList"></ul>
 
-            const li = document.createElement("li");
-            li.textContent = text;
+<script src="script.js"></script>
 
-            const editbtn = document.createElement("button");
-            editbtn.textContent = "Edit";
-            editbtn.onclick = function() {
-                const newText = prompt("Edit task:", li.firstChild.textContent);
-                if (newText) li.firstChild.textContent = newText;
-            };
-
-            const delbtn = document.createElement("button");
-            delbtn.textContent = "Delete";
-            delbtn.onclick = function() {
-                li.remove();
-            };
-
-            li.appendChild(editbtn);
-            li.appendChild(delbtn);
-
-            list.appendChild(li);
-
-            taskInput.value = "";
-        });
-    </script>
 </body>
 </html>
+
